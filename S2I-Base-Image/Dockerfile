@@ -1,6 +1,6 @@
 FROM fedora:26
 
-ADD ./build/amq-broker-7.0.2 /opt
+ADD ./build/amq-broker-7.0.2/ /opt
 
 COPY ./utils/run_amq.sh ./utils/get_inst.py ./broker_configs /opt/amq-broker-7.0.2/bin/
 
