@@ -25,7 +25,7 @@
     <server configuration="${artemis.URI.instance}/etc/broker.xml"/>
 
     <!-- The web server is only bound to localhost by default -->
-    <web bind="http://0.0.0.0:${JOLOKIA_PORT}?handshake-timeout=5</acceptor>" path="web">
+    <web bind="http://0.0.0.0:${JOLOKIA_PORT}?handshake-timeout=5" path="web">
         <app url="activemq-branding" war="activemq-branding.war"/>
         <app url="jolokia" war="console.war"/>
     <!--    <app url="hawtio" war="hawtio-no-slf4j.war"/> -->
