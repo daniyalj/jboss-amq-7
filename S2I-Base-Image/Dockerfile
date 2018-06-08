@@ -1,10 +1,8 @@
 FROM fedora:26
 
-ADD ./build/amq7-broker.tar.gz /opt
+ADD ./build/amq-broker-7.0.2 /opt
 
 COPY ./utils/run_amq.sh ./utils/get_inst.py ./broker_configs /opt/amq-broker-7.0.2/bin/
-
-RUN tar xf /opt/amq7-broker.tar.gz
 
 RUN mkdir /var/run/amq && \
     touch /var/run/amq/x && \
